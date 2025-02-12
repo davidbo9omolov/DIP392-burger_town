@@ -11,9 +11,12 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-react": "^7.26.3",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "axios": "^1.7.9",
+    "babel-jest": "^29.7.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5"
