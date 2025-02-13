@@ -1,7 +1,7 @@
 # 🍔 DIP392 - Burger Town
 
-<br>
 Welcome to Burger Town, the ultimate restaurant website for a premium dining experience in Riga, Latvia. We are currently developing this project and working hard to make it a reality. Stay tuned for updates!
+<br>
 
 ## 👥 Team Members
 
