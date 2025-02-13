@@ -9,6 +9,6 @@ Currently, two official plugins are available:
 
 # Our Report
 
-https://docs.google.com/document/d/1vS695T23trv4x2YB-Se85E_-8wHBqyiO5HpN6Utoy6U/edit?tab=t.0#heading=h.2w8hfyibz1ar
+https://docs.google.com/document/d/1OxYyMI3RDUFjP47KdfYJTD8qNmhSwGcquYyLanLqi1c/edit?tab=t.0#heading=h.4d2l37helqu3
 
 Above is the link of our Report.
