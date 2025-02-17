@@ -11,7 +11,6 @@ Welcome to Burger Town, the ultimate restaurant website for a premium dining exp
 - Abbas Rzayev - 211ADB023
 - Arsenii Prykhodko - 221ADB089
 - Rufi Aliyev - 221ADB153
-- Gizem Gullu - 230ADB075
   <br>
 
 ## 📄 Project Report
