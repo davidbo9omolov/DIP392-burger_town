@@ -5,8 +5,8 @@ Welcome to Burger Town, the ultimate restaurant website for a premium dining exp
 
 ## 👥 Team Members
 
-- Sujai Shanmagam - 231ADB016
 - Davyd Bogomolov - 221ADB232
+- Sujai Shanmagam - 231ADB016
 - Gasim Jabrayilov - 231ADB015
 - Abbas Rzayev - 211ADB023
 - Arsenii Prykhodko - 221ADB089
