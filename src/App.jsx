@@ -7,9 +7,9 @@ import Footer from "./components/footer/Footer.jsx";
 function App() {
     return (
         <Router>
-            <div className={'min-h-screen w-auto flex flex-col'}>
+            <div className={'min-h-screen w-auto flex flex-col overflow-hidden'}>
                 <Header/>
-                <main className={'flex-1 relative'}>
+                <main className={'flex-1 relative px-12'}>
                     <Routes>
                         <Route path={WebRoutes.HOME} element={<Home/>}/>
                         <Route path={WebRoutes.NOT_FOUND} element={<PageNotFound/>}/>
