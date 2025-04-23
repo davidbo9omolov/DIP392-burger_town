@@ -4,6 +4,10 @@ import {WebRoutes} from './constants/routes.js'
 import Header from './components/header/Header.jsx'
 import Footer from "./components/footer/Footer.jsx";
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 function App() {
     return (
         <Router>

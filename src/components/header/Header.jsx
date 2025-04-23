@@ -8,7 +8,7 @@ const Header = () => {
             <h1>
                 LogoType
             </h1>
-            <div>
+            <div className={'hidden md:flex'}>
                 <Link to={WebRoutes.HOME} className={'mx-4 hover:text-secondary'}>Home</Link>
                 <Link to={WebRoutes.MENU} className={'mx-4 hover:text-secondary'}>Menu</Link>
                 <Link to={WebRoutes.ABOUT} className={'mx-4 hover:text-secondary'}>About</Link>
