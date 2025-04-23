@@ -63,7 +63,7 @@ const SectionOneHomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className={'flex gap-6 z-40 flex-wrap justify-center xl:justify-start mt-8 sm:mt-0'}>
+            <div className={'flex gap-6 z-30 flex-wrap justify-center xl:justify-start mt-8'}>
                 {Array.from(Array(5).keys()).map((_, i) =>
                     <BurgerCards key={i} index={i} active={activeCard === i} setActiveCard={setActiveCard}/>
                 )}

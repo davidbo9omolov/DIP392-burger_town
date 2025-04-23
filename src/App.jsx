@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 function App() {
     return (
         <Router>
-            <div className={'min-h-screen w-auto flex flex-col overflow-hidden'}>
+            <div className={'min-h-screen w-auto flex flex-col overflow-hidden relative'}>
                 <Header/>
                 <main className={'flex-1 relative'}>
                     <Routes>
