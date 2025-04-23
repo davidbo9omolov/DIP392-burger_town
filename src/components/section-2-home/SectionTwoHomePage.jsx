@@ -25,7 +25,7 @@ const SectionTwoHomePage = () => {
                     </div>
                 </div>
                 <div className={'w-1/3 flex flex-col justify-center'}>
-                    <h1 className={'text-primary text-3xl font-bold mb-5'}>We Always Provide Quality Fast foods For
+                    <h1 className={'text-primary text-3xl font-bold mb-5'}>We Always Provide Quality Fast Foods For
                         you</h1>
                     <p className={'text-primary/80'}>Burger Town is your go-to destination for high-quality fast food made with fresh, flavorful ingredients. We’re passionate about crafting delicious burgers, crispy chicken, and satisfying sides that hit the spot every time. Our commitment to quality and customer satisfaction means every meal is prepared with care and served with a smile. Whether you’re in for a quick bite or a casual meal with friends, Burger Town delivers taste, freshness, and great service in every visit.</p>
                 </div>
