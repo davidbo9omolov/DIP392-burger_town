@@ -9,7 +9,7 @@ function App() {
         <Router>
             <div className={'min-h-screen w-auto flex flex-col overflow-hidden'}>
                 <Header/>
-                <main className={'flex-1 relative px-12'}>
+                <main className={'flex-1 relative'}>
                     <Routes>
                         <Route path={WebRoutes.HOME} element={<Home/>}/>
                         <Route path={WebRoutes.NOT_FOUND} element={<PageNotFound/>}/>

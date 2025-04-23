@@ -16,13 +16,13 @@ const SectionOneHomePage = () => {
     const [activeCard, setActiveCard] = useState(2);
 
     return (
-        <div className={'flex flex-col h-[85vh]'}>
+        <div className={'flex flex-col h-[90vh] px-12'}>
             <div className={'flex relative w-full h-full'}>
                 <div className={'w-1/2 mt-40'}>
                     <h1 className={'text-6xl font-kavoon tracking-wider'}>FLAVOURFUL MOMENTS <br/>
                         AT OUR BURGER TOWN
                     </h1>
-                    <p className={'my-7'}>
+                    <p className={'my-7 text-primary/80'}>
                         Fast food is a quick and delicious option for any meal. Burger Town offers fresh, flavorful
                         burgers,
                         crispy fries, and refreshing drinks. Our menu is designed for convenience and great taste.
