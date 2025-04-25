@@ -4,10 +4,14 @@ import {WebRoutes} from './constants/routes.js'
 import Header from './components/header/Header.jsx'
 import Footer from "./components/footer/Footer.jsx";
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 function App() {
     return (
         <Router>
-            <div className={'min-h-screen w-auto flex flex-col overflow-hidden'}>
+            <div className={'min-h-screen w-auto flex flex-col overflow-hidden relative'}>
                 <Header/>
                 <main className={'flex-1 relative'}>
                     <Routes>
