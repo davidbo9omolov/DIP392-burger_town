@@ -3,7 +3,7 @@ const Footer = () => {
     const year = date.getFullYear();
 
     return (
-        <footer className={'flex justify-center items-center py-4 px-12'}>
+        <footer className={'flex justify-center items-center py-4 px-12 text-sm md:text-normal'}>
                 &copy; {year} Burger Town. All rights reserved
         </footer>
     );

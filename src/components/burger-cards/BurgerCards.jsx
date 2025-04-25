@@ -16,7 +16,7 @@ const BurgerCards = ({index, active, setActiveCard}) => (
     >
         <motion.span
             className={clsx(
-                "absolute -top-[25px] -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[15px] border-l-transparent border-r-transparent border-t-secondary",
+                "hidden sm:block absolute -top-[25px] -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[15px] border-l-transparent border-r-transparent border-t-secondary",
             )}
             initial={{opacity: 0, y: -10}}
             animate={{opacity: active ? 1 : 0, y: active ? 0 : -10}}

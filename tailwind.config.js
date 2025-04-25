@@ -18,6 +18,13 @@ export default {
             fontFamily: {
                 kavoon: ["Kavoon", ...fontFamily.sans],
             },
+            fontSize: {
+                '2xs': '10px',
+                'normal': '16px',
+            },
+            screens: {
+                'xs': '480px',
+            }
         },
     },
     plugins: [
