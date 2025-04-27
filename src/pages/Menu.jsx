@@ -1,34 +1,40 @@
 import React from 'react';
 import { useState } from "react";
-import beginner1 from "../assets/images/BBQ BEEF BURGER COMBO.jpg";
-import beginner2 from "../assets/images/BBQ BEEF BURGER.jpg";
-import beginner3 from "../assets/images/VEG BURGER.jpg";
-import pro1 from "../assets/images/BEEF BURGER COMBO.jpg";
-import pro2 from "../assets/images/BEEF BURGER.jpg";
-import pro3 from "../assets/images/VEG BURGER COMBO.jpg";
-import pro4 from "../assets/images/CHEESE BURGER COMBO.jpg";
-import pro5 from "../assets/images/CHEESE BURGER.jpg";
-import sauces3 from "../assets/images/GARLIC SAUCE.jpg";
-import sauces4 from "../assets/images/KETCHUP.jpg";
-import sauces5 from "../assets/images/SPICY SAUCE.jpg";
-import sauces6 from "../assets/images/BBQ SAUCE.jpg";
-import sauces7 from "../assets/images/BURGER SAUCE.jpg";
-import drinks1 from "../assets/images/COCA COLA.jpg";
-import drinks2 from "../assets/images/FANTA.jpg";
-import drinks3 from "../assets/images/SPRITE.jpg";
-import drinks4 from "../assets/images/STRAWBERRY LASSI.png";
-import drinks5 from "../assets/images/SWEET LASSI.png";
-import drinks6 from "../assets/images/MANGO LASSI.png";
-import others1 from "../assets/images/CHICKEN 65.jpg";
-import others2 from "../assets/images/CHICKEN BURGER  COMBO.jpg";
-import others3 from "../assets/images/CHICKEN BURGER.jpg";
-import others4 from "../assets/images/CHICKEN LOLLIPOS.jpg";
-import others5 from "../assets/images/CHICKEN WINGS.jpg";
-import others6 from "../assets/images/DOUBLE BEEF BURGER COMBO.jpg";
-import others7 from "../assets/images/DOUBLE BEEF BURGER.jpg";
-import others8 from "../assets/images/FRENCH FRIES.jpg";
-import others9 from "../assets/images/IMG_7944.jpg";
-import others10 from "../assets/images/ONION PAKODA.jpg";
+import beginner1 from "../assets/images/bbq_beef_burger_combo.jpg";
+import beginner2 from "../assets/images/bbq_beef_burger.jpg";
+import beginner3 from "../assets/images/veg_burger.jpg";
+import pro1 from "../assets/images/beef_burger_combo.jpg";
+import pro2 from "../assets/images/beef_burger.jpg";
+import pro3 from "../assets/images/veg_burger_combo.jpg";
+import pro4 from "../assets/images/cheese_burger_combo.jpg";
+import pro5 from "../assets/images/cheese_burger.jpg";
+import sauces3 from "../assets/images/garlic_sauce.jpg";
+import sauces4 from "../assets/images/ketchup.jpg";
+import sauces5 from "../assets/images/spicy_sauce.jpg";
+import sauces6 from "../assets/images/bbq_sauce.jpg";
+import sauces7 from "../assets/images/burger_sauce.jpg";
+import drinks1 from "../assets/images/coca_cola.jpg";
+import drinks2 from "../assets/images/fanta.jpg";
+import drinks3 from "../assets/images/sprite.jpg";
+import drinks4 from "../assets/images/strawberry_lassi.png";
+import drinks5 from "../assets/images/sweet_lassi.png";
+import drinks6 from "../assets/images/mango_lassi.png";
+import others1 from "../assets/images/chicken_65.jpg";
+import others2 from "../assets/images/chicken_burger_combo.jpg";
+import others3 from "../assets/images/chicken_burger.jpg";
+import others4 from "../assets/images/chicken_lollipops.jpg";
+import others5 from "../assets/images/chicken_wings.jpg";
+import others6 from "../assets/images/double_beef_burger_combo.jpg";
+import others7 from "../assets/images/double_beef_burger.jpg";
+import others8 from "../assets/images/french_fries.jpg";
+import others9 from "../assets/images/img_7944.jpg";
+import others10 from "../assets/images/onion_pakoda.jpg";
+import others11 from "../assets/images/chef_special_spicy_beef_burger_combo.jpg";
+import others12 from "../assets/images/chef_special_spicy_beef_burger.jpg";
+import others13 from "../assets/images/chef_special_spicy_chicken_burger_combo.jpg";
+import others14 from "../assets/images/chef_special_spicy_chicken_burger.jpg";
+import others15 from "../assets/images/chef_special_spicy_veg_burger_combo.jpg";
+import others16 from "../assets/images/chef_special_spicy_veg_burger.jpg";
 
 const Menu = () => {
     const [showPDF, setShowPDF] = useState(false);
@@ -111,6 +117,12 @@ const Menu = () => {
                 <BurgerItem img={others8} title="French Fries" price="P100" />
                 <BurgerItem img={others9} title="Chef Special" price="P200" />
                 <BurgerItem img={others10} title="Onion Pakoda" price="P90" />
+                <BurgerItem img={others11} title="CHEF SPECIAL SPICY BEEF BURGER COMBO" price="P90" />
+                <BurgerItem img={others12} title="CHEF SPECIAL SPICY BEEF BURGER" price="P90" />
+                <BurgerItem img={others13} title="CHEF SPECIAL SPICY CHICKEN BURGER COMBO" price="P90" />
+                <BurgerItem img={others14} title="CHEF SPECIAL SPICY CHICKEN BURGER" price="P90" />
+                <BurgerItem img={others15} title="CHEF SPECIAL SPICY VEG BURGER COMBO" price="P90" />
+                <BurgerItem img={others16} title="CHEF SPECIAL SPICY VEG BURGER" price="P90" />
             </div>
 
             {/* Bottom Text */}
