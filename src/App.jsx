@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import {Home,About, PageNotFound} from './pages'
+import {Home, About, Menu, PageNotFound} from './pages'
 import {WebRoutes} from './constants/routes.js'
 import Header from './components/header/Header.jsx'
 import Footer from "./components/footer/Footer.jsx";
@@ -17,6 +17,7 @@ function App() {
                     <Routes>
                         <Route path={WebRoutes.HOME} element={<Home/>}/>
                         <Route path={WebRoutes.ABOUT} element={<About/>}/>
+                        <Route path={WebRoutes.MENU} element={<Menu/>}/>
                         <Route path={WebRoutes.NOT_FOUND} element={<PageNotFound/>}/>
                     </Routes>
                 </main>
