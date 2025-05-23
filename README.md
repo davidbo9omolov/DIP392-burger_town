@@ -19,15 +19,6 @@ The system is designed to:
 * Help restaurant staff manage and process orders more efficiently
 
 Burger Town is optimized for mobile and tablet use, making it an ideal solution for modern, tech-friendly dining environments.
- 
----
-
-## 🛠 Tech Stack
-
-- 🚀 **Vite + React** – Lightning-fast front-end development
-- 🎨 **Tailwind CSS** – Sleek and modern UI styling
-- ⚡ **JavaScript** – Dynamic and interactive functionality
-- 🗄️ **MongoDB + Mongoose** – Scalable and efficient database management
 
 ---
 
@@ -115,6 +106,15 @@ Feel free to explore the application without setting up the development environm
 ## 📼 Video Demonstration
 
 🎥 Click here to watch the demo video (If available)
+
+---
+
+## 🛠 Tech Stack
+
+- 🚀 **Vite + React** – Lightning-fast front-end development
+- 🎨 **Tailwind CSS** – Sleek and modern UI styling
+- ⚡ **JavaScript** – Dynamic and interactive functionality
+- 🗄️ **MongoDB + Mongoose** – Scalable and efficient database management
 
 ---
 
