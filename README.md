@@ -91,6 +91,7 @@ npm test
 | Arsenii Prykhodko | 221ADB089    | Back-End Developer   |
 | Rufi Aliyev       | 221ADB153    | Full-Stack Developer |
 
+* Instructor : Prof. Aleksejs Jurenoks 👑 
 ---
 
 ## 🌐 Live Deployment
