@@ -11,9 +11,9 @@ const BurgerMenu = () => {
         <>
             <div className={'flex flex-col md:hidden justify-center bg-primary rounded-full p-2 w-9 h-9 cursor-pointer z-[60]'}
                  onClick={() => setIsOpen(!isOpen)}>
-            <span className={clsx('bg-black rounded-full h-[2px] w-full transition-all duration-300 ease-in-out',
-                isOpen && '-rotate-45 translate-y-[2px]'
-            )}></span>
+                <span className={clsx('bg-black rounded-full h-[2px] w-full transition-all duration-300 ease-in-out',
+                    isOpen && '-rotate-45 translate-y-[2px]'
+                )}></span>
                 <span className={clsx('bg-black rounded-full h-[2px] w-full my-1',
                     isOpen && 'hidden'
                 )}></span>
@@ -81,15 +81,30 @@ const BurgerMenu = () => {
                     >
                         <Link
                             to={WebRoutes[label.toUpperCase()]}
-                            className="text-3xl "
+                            className="text-3xl"
                             onClick={() => setIsOpen(false)}
                         >
                             {label}
                         </Link>
                     </motion.div>
                 ))}
+                <motion.div
+                    variants={{
+                        open: { x: 0, opacity: 1 },
+                        closed: { x: -350, opacity: 0 },
+                    }}
+                    transition={{ duration: 0.3, ease: "easeOut", type:'spring', stiffness: 100, damping: 12 }}
+                    className={'mb-12'}
+                >
+                    <Link
+                        to={WebRoutes.LOGIN}
+                        className="text-3xl text-secondary font-bold"
+                        onClick={() => setIsOpen(false)}
+                    >
+                        Register
+                    </Link>
+                </motion.div>
             </motion.div>
-
         </>
     );
 };
