@@ -19,21 +19,8 @@ The system is designed to:
 * Help restaurant staff manage and process orders more efficiently
 
 Burger Town is optimized for mobile and tablet use, making it an ideal solution for modern, tech-friendly dining environments.
-
----
-
-## 👥 Team Members and Roles
-
-| Name              | Student ID   | Role                 |
-|-------------------|--------------|----------------------|
-| Sujai Shanmugam   | 231ADB016    | Full-Stack Developer |
-| Davyd Bogomolov   | 221ADB232    | Front-End Developer  |
-| Gasim Jabrayilov  | 231ADB015    | Back-End Developer   |
-| Abbas Rzayev      | 211ADB023    | Front-End Developer  |
-| Arsenii Prykhodko | 221ADB089    | Back-End Developer   |
-| Rufi Aliyev       | 221ADB153    | Full-Stack Developer |
  
- ---
+---
 
 ## 🛠 Tech Stack
 
@@ -99,6 +86,19 @@ npm test
 - If you encounter any port conflicts, modify the PORT in the .env file
 - Ensure MongoDB is running if using a local instance
 - Clear npm cache if you encounter dependency issues: `npm cache clean --force`
+
+---
+
+## 👥 Team Members and Roles
+
+| Name              | Student ID   | Role                 |
+|-------------------|--------------|----------------------|
+| Sujai Shanmugam   | 231ADB016    | Full-Stack Developer |
+| Davyd Bogomolov   | 221ADB232    | Front-End Developer  |
+| Gasim Jabrayilov  | 231ADB015    | Back-End Developer   |
+| Abbas Rzayev      | 211ADB023    | Front-End Developer  |
+| Arsenii Prykhodko | 221ADB089    | Back-End Developer   |
+| Rufi Aliyev       | 221ADB153    | Full-Stack Developer |
 
 ---
 
