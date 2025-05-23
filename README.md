@@ -39,28 +39,58 @@ Burger Town is a modern web-based ordering platform for restaurants. It offers:
 ## ⚙️ Setup and Run Instructions
 
 ### Prerequisites
-- Node.js and npm installed
-- MongoDB installed and running (or use MongoDB Atlas)
+- Node.js (v14.0.0 or higher) and npm (v6.0.0 or higher) installed
+- MongoDB (v4.4 or higher) installed and running locally, or a MongoDB Atlas account
+- Git installed on your system
 
 ### 1. Clone the Repository
-
+```bash
 git clone https://github.com/davidbo9omolov/team7-section007-finalproject
+cd team7-section007-finalproject
+```
 
-### 2. Install Frontend Dependencies
+### 2. Install Dependencies
+```bash
+# Install all dependencies (both frontend and backend)
+npm install
+```
 
-* npm install
+### 3. Environment Setup
+1. Create a `.env` file in the root directory
+2. Add the following environment variables:
+```env
+MONGODB_URI=your_mongodb_connection_string
+PORT=3000
+```
 
-### 3. Run Frontend
+### 4. Running the Application
 
-* npm run dev
+#### Development Mode
+```bash
+# Start the development server
+npm run dev
+```
+The application will be available at `http://localhost:5173`
 
-### 4. Install Backend Dependencies
+#### Production Mode
+```bash
+# Build the application
+npm run build
 
-* npm install
+# Start the production server
+npm run start
+```
 
-### 5. Run Backend
+### 5. Testing
+```bash
+# Run tests
+npm test
+```
 
-* npm run start
+### Troubleshooting
+- If you encounter any port conflicts, modify the PORT in the .env file
+- Ensure MongoDB is running if using a local instance
+- Clear npm cache if you encounter dependency issues: `npm cache clean --force`
 
 ---
 
