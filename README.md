@@ -10,13 +10,13 @@ Burger Town is a web-based restaurant ordering system that allows customers to a
 
 The system is designed to:
 
-Replace traditional paper menus with a digital alternative
+* Replace traditional paper menus with a digital alternative
 
-Allow customers to browse items, customize orders, and submit them to the kitchen
+* Allow customers to browse items, customize orders, and submit them to the kitchen
 
-Improve order accuracy, speed, and customer experience
+* Improve order accuracy, speed, and customer experience
 
-Help restaurant staff manage and process orders more efficiently
+* Help restaurant staff manage and process orders more efficiently
 
 Burger Town is optimized for mobile and tablet use, making it an ideal solution for modern, tech-friendly dining environments.
 
