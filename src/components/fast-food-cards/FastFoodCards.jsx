@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import {clsx} from "clsx";
 
-const FastFoodCards = ({className,image,scale=1.05}) => {
+const FastFoodCards = ({className,image,scale=1.05,item}) => {
     return (
         <motion.img
-            src={image}
+            src={item?.src || image}
             alt="Fast Food Card"
             className={clsx("bg-primary rounded-md z-10",className)}
             whileHover={{

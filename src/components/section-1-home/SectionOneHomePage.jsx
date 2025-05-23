@@ -6,6 +6,13 @@ import {WebRoutes} from '../../constants/routes';
 import BigBurger from '../../assets/images/big-burger.svg';
 import BurgerCards from "../burger-cards/BurgerCards";
 
+import Burger from '../../assets/images/bbq_beef_burger.jpg'
+import Fries from '../../assets/images/french_fries.jpg'
+import ChefSpecialSpicyBeef from '../../assets/images/chef_special_spicy_beef_burger.jpg'
+import ChickenBurger from '../../assets/images/chicken_burger.jpg'
+import CheeseBurger from '../../assets/images/cheese_burger.jpg'
+import ChefSpecialSpicyVegBurger from '../../assets/images/chef_special_spicy_veg_burger.jpg'
+
 const LinkPages = {
     OrderNow: 'OrderNow',
     ViewMenu: 'ViewMenu',
@@ -14,6 +21,14 @@ const LinkPages = {
 const SectionOneHomePage = () => {
     const active = LinkPages.OrderNow
     const [activeCard, setActiveCard] = useState(2);
+    const images = [
+        {src: Burger, alt: 'Burger', title: 'BBQ Beef Burger'},
+        {src: Fries, alt: 'Fries', title: 'French Fries'},
+        {src: ChefSpecialSpicyBeef, alt: 'Chef Special Spicy Beef', title: 'Chef Special Spicy Beef'},
+        {src: ChickenBurger, alt: 'Chicken Burger', title: 'Chicken Burger'},
+        {src: CheeseBurger, alt: 'Cheese Burger', title: 'Cheese Burger'},
+        {src: ChefSpecialSpicyVegBurger, alt: 'Chef Special Spicy Veg Burger', title: 'Chef Special Spicy Veg Burger'},
+    ]
 
     return (
         <div className={'flex flex-col h-full sm:h-[90vh] px-12'}>
@@ -64,8 +79,8 @@ const SectionOneHomePage = () => {
                 </div>
             </div>
             <div className={'flex gap-6 z-30 flex-wrap justify-center xl:justify-start mt-8'}>
-                {Array.from(Array(5).keys()).map((_, i) =>
-                    <BurgerCards key={i} index={i} active={activeCard === i} setActiveCard={setActiveCard}/>
+                {images.map((item, i) =>
+                    <BurgerCards key={i} index={i} active={activeCard === i} setActiveCard={setActiveCard} item={item}/>
                 )}
             </div>
         </div>
