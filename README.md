@@ -1,16 +1,24 @@
 # 🍔 Team 7 DIP392 - Burger Town
 
-**Burger Town** is a digital restaurant website designed to enhance the dining experience in Riga, Latvia. By scanning a QR code placed on a restaurant table, customers can instantly access the menu, place orders, and receive live updates on their order status — all from their own device. Our (Team 7) goal is to eliminate the need for physical menus, speed up service, and offer a modern, seamless dining experience as per the owner of the restraurant request.
+Welcome to the official GitHub repository for Burger Town — a modern digital restaurant ordering platform developed by Team 7 for the DIP392 final project.
 
 ---
 
 ## 🧩 Project Summary
 
-Burger Town is a modern web-based ordering platform for restaurants. It offers:
-- QR code-enabled digital menu access
-- Online order placement from customer devices
-- Real-time order tracking and updates
-- Clean, responsive UI using Tailwind CSS and React
+Burger Town is a web-based restaurant ordering system that allows customers to access a digital menu, place orders, and receive real-time updates directly from their own devices. By scanning a QR code placed on their table, users are instantly directed to the restaurant’s website without needing to download any app.
+
+The system is designed to:
+
+Replace traditional paper menus with a digital alternative
+
+Allow customers to browse items, customize orders, and submit them to the kitchen
+
+Improve order accuracy, speed, and customer experience
+
+Help restaurant staff manage and process orders more efficiently
+
+Burger Town is optimized for mobile and tablet use, making it an ideal solution for modern, tech-friendly dining environments.
 
 ---
 
