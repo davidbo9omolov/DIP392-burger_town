@@ -48,21 +48,19 @@ git clone https://github.com/davidbo9omolov/team7-section007-finalproject
 
 ### 2. Install Frontend Dependencies
 
-* cd frontend
 * npm install
 
 ### 3. Run Frontend
 
-npm run dev
+* npm run dev
 
 ### 4. Install Backend Dependencies
 
-* cd ../backend
 * npm install
 
 ### 5. Run Backend
 
-npm run start
+* npm run start
 
 ---
 
