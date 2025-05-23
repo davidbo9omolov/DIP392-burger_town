@@ -1,4 +1,4 @@
-# 🍔 DIP392 - Burger Town
+# 🍔 Team 7 DIP392 - Burger Town
 
 **Burger Town** is a digital restaurant website designed to enhance the dining experience in Riga, Latvia. By scanning a QR code placed on a restaurant table, customers can instantly access the menu, place orders, and receive live updates on their order status — all from their own device. Our (Team 7) goal is to eliminate the need for physical menus, speed up service, and offer a modern, seamless dining experience as per the owner of the restraurant request.
 
@@ -16,21 +16,23 @@ Burger Town is a modern web-based ordering platform for restaurants. It offers:
 
 ## 👥 Team Members and Roles
 
- Name              Student ID      Role                  
- Sujai Shanmugam     231ADB016      Full-Stack Developer  
- Davyd Bogomolov     221ADB232      Front-End Developer   
- Gasim Jabrayilov    231ADB015      Back-End Developer    
- Abbas Rzayev        211ADB023      Front-End Developer   
- Arsenii Prykhodko   221ADB089      Back-End Developer   
- Rufi Aliyev         221ADB153      Full-Stack Developer 
+| Name              | Student ID   | Role                 |
+|-------------------|--------------|----------------------|
+| Sujai Shanmugam   | 231ADB016    | Full-Stack Developer |
+| Davyd Bogomolov   | 221ADB232    | Front-End Developer  |
+| Gasim Jabrayilov  | 231ADB015    | Back-End Developer   |
+| Abbas Rzayev      | 211ADB023    | Front-End Developer  |
+| Arsenii Prykhodko | 221ADB089    | Back-End Developer   |
+| Rufi Aliyev       | 221ADB153    | Full-Stack Developer |
  
  ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** Vite + React, Tailwind CSS, JavaScript
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB, Mongoose
+- 🚀 **Vite + React** – Lightning-fast front-end development
+- 🎨 **Tailwind CSS** – Sleek and modern UI styling
+- ⚡ **JavaScript** – Dynamic and interactive functionality
+- 🗄️ **MongoDB + Mongoose** – Scalable and efficient database management
 
 ---
 
@@ -46,26 +48,19 @@ git clone https://github.com/davidbo9omolov/team7-section007-finalproject
 
 ### 2. Install Frontend Dependencies
 
-cd frontend
-npm install
+* npm install
 
 ### 3. Run Frontend
 
-npm run dev
+* npm run dev
 
 ### 4. Install Backend Dependencies
 
-cd ../backend
-npm install
+* npm install
 
-### 5. Create .env File in /backend Directory
+### 5. Run Backend
 
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-
-### 6. Run Backend
-
-npm run start
+* npm run start
 
 ---
 
@@ -75,13 +70,13 @@ npm run start
 
 ---
 
-## 📄 Final Deliverables
+## 📄 Final documentations
 
 report.pdf — Final written report
 
 presentation.pptx — Project presentation slides
 
-(It is also in the project_docs)
+(It is in the project_docs in the project file !)
 
 ---
 
