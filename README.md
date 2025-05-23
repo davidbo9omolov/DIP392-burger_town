@@ -1,31 +1,94 @@
 # 🍔 DIP392 - Burger Town
 
-Welcome to Burger Town, the ultimate restaurant website for a premium dining experience in Riga, Latvia. We are currently developing this project and working hard to make it a reality. Stay tuned for updates!
-<br>
+**Burger Town** is a digital restaurant website designed to enhance the dining experience in Riga, Latvia. By scanning a QR code placed on a restaurant table, customers can instantly access the menu, place orders, and receive live updates on their order status — all from their own device. Our (Team 7) goal is to eliminate the need for physical menus, speed up service, and offer a modern, seamless dining experience as per the owner of the restraurant request.
 
-## 👥 Team Members
+---
 
-- Davyd Bogomolov - 221ADB232
-- Sujai Shanmagam - 231ADB016
-- Gasim Jabrayilov - 231ADB015
-- Abbas Rzayev - 211ADB023
-- Arsenii Prykhodko - 221ADB089
-- Rufi Aliyev - 221ADB153
-  <br>
+## 🧩 Project Summary
 
-## 📄 Project Report
+Burger Town is a modern web-based ordering platform for restaurants. It offers:
+- QR code-enabled digital menu access
+- Online order placement from customer devices
+- Real-time order tracking and updates
+- Clean, responsive UI using Tailwind CSS and React
 
-🔗 Click here to view our report : https://docs.google.com/document/d/1OxYyMI3RDUFjP47KdfYJTD8qNmhSwGcquYyLanLqi1c/edit?tab=t.0#heading=h.4d2l37helqu3
-<br>
+---
+
+## 👥 Team Members and Roles
+
+ Name              Student ID      Role                  
+ Sujai Shanmugam     231ADB016      Full-Stack Developer  
+ Davyd Bogomolov     221ADB232      Front-End Developer   
+ Gasim Jabrayilov    231ADB015      Back-End Developer    
+ Abbas Rzayev        211ADB023      Front-End Developer   
+ Arsenii Prykhodko   221ADB089      Back-End Developer   
+ Rufi Aliyev         221ADB153      Full-Stack Developer 
+ 
+ ---
 
 ## 🛠 Tech Stack
 
-- 🚀 Vite + React – Lightning-fast front-end development
-- 🎨 Tailwind CSS – Sleek and modern UI styling
-- ⚡ JavaScript – Dynamic and interactive functionality
-- 🗄 MongoDB + Mongoose – Scalable database management
+- **Frontend:** Vite + React, Tailwind CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB, Mongoose
 
-## 📌 Status: Work in progress...
+---
 
-We’re actively developing Burger Town, ensuring a seamless and engaging user experience. Stay tuned for the launch! 🚀🔥
-<br>
+## ⚙️ Setup and Run Instructions
+
+### Prerequisites
+- Node.js and npm installed
+- MongoDB installed and running (or use MongoDB Atlas)
+
+### 1. Clone the Repository
+
+git clone https://github.com/davidbo9omolov/team7-section007-finalproject
+
+### 2. Install Frontend Dependencies
+
+cd frontend
+npm install
+
+### 3. Run Frontend
+
+npm run dev
+
+### 4. Install Backend Dependencies
+
+cd ../backend
+npm install
+
+### 5. Create .env File in /backend Directory
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+### 6. Run Backend
+
+npm run start
+
+---
+
+## 📼 Video Demonstration
+
+🎥 Click here to watch the demo video (If available)
+
+---
+
+## 📄 Final Deliverables
+
+report.pdf — Final written report
+
+presentation.pptx — Project presentation slides
+
+(It is also in the project_docs)
+
+---
+
+## 💐 Thank you
+
+### Team 7.
+
+---
+
+
