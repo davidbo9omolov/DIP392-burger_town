@@ -70,13 +70,13 @@ git clone https://github.com/davidbo9omolov/team7-section007-finalproject
 
 ---
 
-## 📄 Final Deliverables
+## 📄 Final documentations
 
 report.pdf — Final written report
 
 presentation.pptx — Project presentation slides
 
-(It is also in the project_docs)
+(It is in the project_docs in the project file !)
 
 ---
 
