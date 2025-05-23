@@ -1,4 +1,4 @@
-# 🍔 DIP392 - Burger Town
+# 🍔 Team 7 DIP392 - Burger Town
 
 **Burger Town** is a digital restaurant website designed to enhance the dining experience in Riga, Latvia. By scanning a QR code placed on a restaurant table, customers can instantly access the menu, place orders, and receive live updates on their order status — all from their own device. Our (Team 7) goal is to eliminate the need for physical menus, speed up service, and offer a modern, seamless dining experience as per the owner of the restraurant request.
 
