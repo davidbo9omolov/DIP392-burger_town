@@ -4,5 +4,6 @@ export const WebRoutes = {
     ABOUT: '/about',
     NOT_FOUND: '*',
     LOGIN: '/login',
-    ADMIN_DASHBOARD: '/admin-dashboard'
+    ADMIN_DASHBOARD: '/admin-dashboard',
+    ORDER: '/order'
 }
