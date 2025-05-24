@@ -5,6 +5,9 @@ import Header from './components/header/Header.jsx'
 import Footer from "./components/footer/Footer.jsx";
 import LoginPage from './pages/LoginPage';
 import AdminDashboard from './pages/AdminDashboard';
+import SendtoKitchen from './pages/SendtoKitchen.jsx';
+import OrderStatusPage from './pages/OrderStatusPage.jsx';
+import React, { useState } from 'react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,9 +17,24 @@ function App() {
     const location = useLocation();
     const showHeaderAndFooter = location.pathname !== WebRoutes.LOGIN && location.pathname !== WebRoutes.ADMIN_DASHBOARD;
 
+    const [cart, setCart] = useState([]);
+
+    const addToCart = (item) => {
+        setCart(prevCart => {
+            const existingItemIndex = prevCart.findIndex(cartItem => cartItem.id === item.id);
+            if (existingItemIndex > -1) {
+                const newCart = [...prevCart];
+                newCart[existingItemIndex].quantity += 1;
+                return newCart;
+            } else {
+                return [...prevCart, { ...item, quantity: 1 }];
+            }
+        });
+    };
+
     return (
         <div className={'min-h-screen w-auto flex flex-col overflow-hidden relative'}>
-            {showHeaderAndFooter && <Header/>}
+            {showHeaderAndFooter && <Header cart={cart} />}
             <main className={'flex-1 relative'}>
                 <Routes>
                     {/* Set Login page as the initial route */}
@@ -24,6 +42,12 @@ function App() {
                     
                     {/* Admin dashboard route */}
                     <Route path={WebRoutes.ADMIN_DASHBOARD} element={<AdminDashboard/>}/>
+
+                    {/* New Send to Kitchen route - pass cart, addToCart, and setCart as props */}
+                    <Route path={WebRoutes.ORDER} element={<SendtoKitchen cart={cart} addToCart={addToCart} setCart={setCart} />}/>
+
+                    {/* New Order Status route */}
+                    <Route path={WebRoutes.ORDER_STATUS} element={<OrderStatusPage/>}/>
                     
                     {/* Standard routes that show header/footer (accessible after guest login) */}
                     <Route path={WebRoutes.HOME} element={<Home/>}/>
