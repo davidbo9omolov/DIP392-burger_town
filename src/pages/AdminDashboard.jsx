@@ -1,27 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { WebRoutes } from '../constants/routes';
 
 const AdminDashboard = () => {
     const navigate = useNavigate();
 
-    // Dummy data for demonstration
-    const orders = [
-        { id: 1, item: 'Burger Combo', quantity: 2, status: 'Preparing' },
-        { id: 2, item: 'French Fries', quantity: 3, status: 'Ready' },
-        { id: 3, item: 'Milkshake', quantity: 1, status: 'Delivered' },
-    ];
+    // Dummy data for demonstration (will be replaced by state)
+    const [menuItems, setMenuItems] = useState([
+        { id: 1, name: 'Classic Burger', price: 10.99, imageUrl: 'https://via.placeholder.com/150' },
+        { id: 2, name: 'Cheese Fries', price: 4.99, imageUrl: 'https://via.placeholder.com/150' },
+        { id: 3, name: 'Chocolate Shake', price: 5.99, imageUrl: 'https://via.placeholder.com/150' },
+    ]);
 
-    const menuItems = [
-        { id: 1, name: 'Classic Burger', price: 10.99 },
-        { id: 2, name: 'Cheese Fries', price: 4.99 },
-        { id: 3, name: 'Chocolate Shake', price: 5.99 },
-    ];
+    const [newItem, setNewItem] = useState({ name: '', price: '', imageUrl: '' });
+    const [editingItem, setEditingItem] = useState(null);
 
     const handleLogout = () => {
         console.log('Logging out...');
         // Perform logout logic here if needed (e.g., clear local storage, call API)
         navigate(WebRoutes.LOGIN); // Navigate to the login page
+    };
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        if (editingItem) {
+            setEditingItem({ ...editingItem, [name]: value });
+        } else {
+            setNewItem({ ...newItem, [name]: value });
+        }
+    };
+
+    const handleAddItem = () => {
+        if (newItem.name && newItem.price && newItem.imageUrl) {
+            setMenuItems([...menuItems, { ...newItem, id: menuItems.length + 1 }]);
+            setNewItem({ name: '', price: '', imageUrl: '' });
+        }
+    };
+
+    const handleUpdateItem = () => {
+        if (editingItem) {
+            const updatedItems = menuItems.map(item =>
+                item.id === editingItem.id ? editingItem : item
+            );
+            setMenuItems(updatedItems);
+            setEditingItem(null);
+        }
+    };
+
+    const handleCancelEdit = () => {
+        setEditingItem(null);
+    };
+
+    const handleDeleteItem = (id) => {
+        const filteredItems = menuItems.filter(item => item.id !== id);
+        setMenuItems(filteredItems);
     };
 
     return (
@@ -41,16 +73,25 @@ const AdminDashboard = () => {
                 <h3 className="text-2xl font-semibold mb-4">Recent Orders</h3>
                 <div className="bg-gray-800 rounded-lg p-6">
                     <ul>
-                        {orders.map(order => (
-                            <li key={order.id} className="border-b border-gray-700 py-2 flex justify-between items-center">
+                        {menuItems.map(item => (
+                            <li key={item.id} className="border-b border-gray-700 py-2 flex justify-between items-center">
                                 <div>
-                                    <span className="font-semibold">Order #{order.id}:</span> {order.item} x{order.quantity}
+                                    <span className="font-semibold">{item.name}</span> - ${item.price.toFixed(2)}
                                 </div>
-                                <span className={
-                                    `px-3 py-1 rounded-full text-sm ${order.status === 'Preparing' ? 'bg-yellow-500 text-black' : order.status === 'Ready' ? 'bg-green-500 text-white' : 'bg-blue-500 text-white'}`
-                                }>
-                                    {order.status}
-                                </span>
+                                <div>
+                                    <button 
+                                        onClick={() => setEditingItem(item)}
+                                        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded mr-2"
+                                    >
+                                        Edit
+                                    </button>
+                                    <button 
+                                        onClick={() => handleDeleteItem(item.id)}
+                                        className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                                    >
+                                        Delete
+                                    </button>
+                                </div>
                             </li>
                         ))}
                     </ul>
@@ -68,13 +109,73 @@ const AdminDashboard = () => {
                                     <span className="font-semibold">{item.name}</span> - ${item.price.toFixed(2)}
                                 </div>
                                 <div>
-                                    <button className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded mr-2">Edit</button>
-                                    <button className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Delete</button>
+                                    <button 
+                                        onClick={() => setEditingItem(item)}
+                                        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded mr-2"
+                                    >
+                                        Edit
+                                    </button>
+                                    <button 
+                                        onClick={() => handleDeleteItem(item.id)}
+                                        className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                                    >
+                                        Delete
+                                    </button>
                                 </div>
                             </li>
                         ))}
                     </ul>
-                    <button className="mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add New Item</button>
+                    
+                    {/* Form to Add/Edit Item */}
+                    <div className="mt-8 p-4 bg-gray-700 rounded-lg">
+                        <h4 className="text-xl font-semibold mb-4">{editingItem ? 'Edit Item' : 'Add New Item'}</h4>
+                        <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-300">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                value={editingItem ? editingItem.name : newItem.name}
+                                onChange={handleInputChange}
+                                className="mt-1 block w-full rounded-md bg-gray-800 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-300">Price</label>
+                            <input
+                                type="number"
+                                name="price"
+                                value={editingItem ? editingItem.price : newItem.price}
+                                onChange={handleInputChange}
+                                className="mt-1 block w-full rounded-md bg-gray-800 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                            />
+                        </div>
+                         <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-300">Image URL</label>
+                            <input
+                                type="text"
+                                name="imageUrl"
+                                value={editingItem ? editingItem.imageUrl : newItem.imageUrl}
+                                onChange={handleInputChange}
+                                className="mt-1 block w-full rounded-md bg-gray-800 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                            />
+                        </div>
+                        <div className="flex justify-end">
+                            {editingItem && (
+                                <button 
+                                    onClick={handleCancelEdit}
+                                    className="mr-2 bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded"
+                                >
+                                    Cancel
+                                </button>
+                            )}
+                            <button 
+                                onClick={editingItem ? handleUpdateItem : handleAddItem}
+                                className={`px-4 py-2 rounded ${editingItem ? 'bg-blue-500 hover:bg-blue-600' : 'bg-green-500 hover:bg-green-600'} text-white`}
+                            >
+                                {editingItem ? 'Update Item' : 'Add Item'}
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
