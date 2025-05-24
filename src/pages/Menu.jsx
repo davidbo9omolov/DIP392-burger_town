@@ -40,31 +40,6 @@ const Menu = ({ onAddToCart }) => {
     const [showPDF, setShowPDF] = useState(false);
     return (
         <div className="bg-[#0d0d0d] text-white min-h-screen font-[Kavoon] px-6 md:px-20 py-10">
-            <div className="flex justify-center mb-10">
-                <button
-                    onClick={() => setShowPDF(true)}
-                    className="px-6 py-3 bg-white text-black font-bold rounded hover:bg-gray-200 transition"
-                >
-                    View Full Menu .PDF
-                </button>
-            </div>
-            {showPDF && (
-                <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-lg overflow-hidden max-w-5xl w-full h-[80vh] relative">
-                        <button
-                            onClick={() => setShowPDF(false)}
-                            className="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
-                        >
-                            Close
-                        </button>
-                        <iframe
-                            src="https://barents.lv/uploads/files/BARENTS_MENU_0104/Barents_Menu_ENG.pdf"
-                            className="w-full h-full"
-                            title="Menu PDF"
-                        ></iframe>
-                    </div>
-                </div>
-            )}
             {/* BEGINNER Section */}
             <h2 className="text-4xl text-center mb-8">— BEGINNER —</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">

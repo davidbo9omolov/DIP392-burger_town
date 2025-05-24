@@ -8,18 +8,22 @@ import { WebRoutes } from '../constants/routes';
 // The menuItems array was used in CartPage for adding items, which won't be needed here.
 // We only need the cart state and the setCart function.
 
-const SentToKitchenPage = ({ cart, setCart }) => {
+const SentToKitchenPage = ({ cart, setCart, addOrder }) => {
     const navigate = useNavigate();
     
-    // Function to handle sending the order
+    // Function to handle sending the order - will add back later
     const sendOrderToKitchen = () => {
         if (cart.length === 0) {
             alert("Your cart is empty. Please add items before sending the order.");
             return;
         }
         console.log("Sending order to kitchen:", cart);
+        console.log("Calling addOrder function...");
         // Here you would typically send the order data to a backend API
         
+        // Add the order to the orders state in App.jsx
+        addOrder(cart);
+
         // Show success message
         alert("Order successfully sent to kitchen!");
         
