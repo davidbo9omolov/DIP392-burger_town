@@ -121,7 +121,7 @@ Feel free to explore the application without setting up the development environm
 
 ## 📄 Final documentations
 
-report.pdf — Final written report
+[report.pdf](https://github.com/davidbo9omolov/team7-section007-finalproject/blob/8381173635d1347bf46749512d78316856f1428e/project_docs/report.pdf) — Final written report
 
 presentation.pptx — Project presentation slides
 
