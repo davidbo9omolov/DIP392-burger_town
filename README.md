@@ -121,9 +121,9 @@ Feel free to explore the application without setting up the development environm
 
 ## 📄 Final documentations
 
-[report.pdf](https://github.com/davidbo9omolov/team7-section007-finalproject/blob/8381173635d1347bf46749512d78316856f1428e/project_docs/report.pdf) — Final written report
+[report.pdf](https://github.com/davidbo9omolov/team7-section007-finalproject/blob/8381173635d1347bf46749512d78316856f1428e/project_docs/report.pdf) — Team 7 Comprehensive final report
 
-presentation.pptx — Project presentation slides
+[presentation.pptx](https://github.com/davidbo9omolov/team7-section007-finalproject/blob/a9be2658815383d7a3855c9fd78ca3d4efddd7d1/project_docs/presentation.pptx) — Team 7 project presentation slides
 
 (It is in the project_docs in the project file !)
 
@@ -131,7 +131,7 @@ presentation.pptx — Project presentation slides
 
 ## 💐 Thank you
 
-### Team 7.
+### By - Team 7.
 
 ---
 
