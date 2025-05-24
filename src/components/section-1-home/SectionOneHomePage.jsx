@@ -46,7 +46,7 @@ const SectionOneHomePage = () => {
                         today!
                     </p>
                     <div className={'flex mt-10 md:mt-0'}>
-                        <Link to={WebRoutes.ORDER}
+                        <Link to={WebRoutes.MENU}
                             className={clsx('w-fit p-2 px-4 rounded-xl mr-5 border-2 hover:text-primary hover:bg-secondary hover:border-[#EFBB8B]',
                                 active === LinkPages.OrderNow ? 'bg-secondary text-primary border-[#EFBB8B]' : 'text-secondary border-transparent'
                             )}>

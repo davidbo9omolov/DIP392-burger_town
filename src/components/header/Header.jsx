@@ -57,8 +57,8 @@ const Header = ({ cart }) => {
                 <div className={'hidden md:block relative w-[150px] h-[32px] mr-4'}>
                     <SearchInput/>
                 </div>
-                <Link to={WebRoutes.ORDER} className="text-white text-lg hover:text-secondary transition-colors duration-300">
-                    🛒 ({totalItems})
+                <Link to={WebRoutes.CART_DETAILS} className="text-white text-lg hover:text-secondary transition-colors duration-300 flex items-center">
+                     🛒 {totalItems > 0 && <span className="ml-1">({totalItems})</span>}
                 </Link>
             </div>
             <BurgerMenu/>

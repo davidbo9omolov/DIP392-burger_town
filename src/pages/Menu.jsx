@@ -36,7 +36,7 @@ import others14 from "../assets/images/chef_special_spicy_chicken_burger.jpg";
 import others15 from "../assets/images/chef_special_spicy_veg_burger_combo.jpg";
 import others16 from "../assets/images/chef_special_spicy_veg_burger.jpg";
 
-const Menu = () => {
+const Menu = ({ onAddToCart }) => {
     const [showPDF, setShowPDF] = useState(false);
     return (
         <div className="bg-[#0d0d0d] text-white min-h-screen font-[Kavoon] px-6 md:px-20 py-10">
@@ -68,61 +68,61 @@ const Menu = () => {
             {/* BEGINNER Section */}
             <h2 className="text-4xl text-center mb-8">— BEGINNER —</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                <BurgerItem img={beginner1} title="Beer-Cheese Bacon" price="P160" />
-                <BurgerItem img={beginner2} title="Steak Burger" price="P140" />
-                <BurgerItem img={beginner3} title="Cheese Mushroom" price="P150" />
+                <BurgerItem img={beginner1} title="Beer-Cheese Bacon" price="P160" onAddToCart={onAddToCart} />
+                <BurgerItem img={beginner2} title="Steak Burger" price="P140" onAddToCart={onAddToCart} />
+                <BurgerItem img={beginner3} title="Cheese Mushroom" price="P150" onAddToCart={onAddToCart} />
             </div>
 
             {/* PRO Section */}
             <h2 className="text-4xl text-center mt-16 mb-8">— PRO —</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                <BurgerItem img={pro1} title="Steak Burger" price="P200" />
-                <BurgerItem img={pro2} title="Beer-Cheese Bacon" price="P220" />
-                <BurgerItem img={pro3} title="Cheese Mushroom" price="P210" />
-                <BurgerItem img={pro4} title="Cheese Burger Combo" price="P150" />
-                <BurgerItem img={pro5} title="Cheese Burger" price="P130" />
+                <BurgerItem img={pro1} title="Steak Burger" price="P200" onAddToCart={onAddToCart} />
+                <BurgerItem img={pro2} title="Beer-Cheese Bacon" price="P220" onAddToCart={onAddToCart} />
+                <BurgerItem img={pro3} title="Cheese Mushroom" price="P210" onAddToCart={onAddToCart} />
+                <BurgerItem img={pro4} title="Cheese Burger Combo" price="P150" onAddToCart={onAddToCart} />
+                <BurgerItem img={pro5} title="Cheese Burger" price="P130" onAddToCart={onAddToCart} />
             </div>
 
             {/* SAUCES Section */}
             <h2 className="text-4xl text-center mt-16 mb-8">— SAUCES —</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                <BurgerItem img={sauces3} title="Garlic Sauce" price="P50" />
-                <BurgerItem img={sauces4} title="Ketchup" price="P40" />
-                <BurgerItem img={sauces5} title="Spicy Sauce" price="P60" />
-                <BurgerItem img={sauces6} title="BBQ SAUCE" price="P60" />
-                <BurgerItem img={sauces7} title="BURGER SAUCE" price="P60" />
+                <BurgerItem img={sauces3} title="Garlic Sauce" price="P50" onAddToCart={onAddToCart} />
+                <BurgerItem img={sauces4} title="Ketchup" price="P40" onAddToCart={onAddToCart} />
+                <BurgerItem img={sauces5} title="Spicy Sauce" price="P60" onAddToCart={onAddToCart} />
+                <BurgerItem img={sauces6} title="BBQ SAUCE" price="P60" onAddToCart={onAddToCart} />
+                <BurgerItem img={sauces7} title="BURGER SAUCE" price="P60" onAddToCart={onAddToCart} />
             </div>
 
             {/* DRINKS Section */}
             <h2 className="text-4xl text-center mt-16 mb-8">— DRINKS —</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                <BurgerItem img={drinks1} title="Coca-Cola" price="P80" />
-                <BurgerItem img={drinks2} title="Fanta" price="P80" />
-                <BurgerItem img={drinks3} title="Sprite" price="P80" />
-                <BurgerItem img={drinks4} title="Strawberry Lassi" price="P100" />
-                <BurgerItem img={drinks5} title="Sweet Lassi" price="P90" />
-                <BurgerItem img={drinks6} title="MANGO LASSI" price="P80" />
+                <BurgerItem img={drinks1} title="Coca-Cola" price="P80" onAddToCart={onAddToCart} />
+                <BurgerItem img={drinks2} title="Fanta" price="P80" onAddToCart={onAddToCart} />
+                <BurgerItem img={drinks3} title="Sprite" price="P80" onAddToCart={onAddToCart} />
+                <BurgerItem img={drinks4} title="Strawberry Lassi" price="P100" onAddToCart={onAddToCart} />
+                <BurgerItem img={drinks5} title="Sweet Lassi" price="P90" onAddToCart={onAddToCart} />
+                <BurgerItem img={drinks6} title="MANGO LASSI" price="P80" onAddToCart={onAddToCart} />
             </div>
 
             {/* OTHERS (Snacks & Sides) Section */}
             <h2 className="text-4xl text-center mt-16 mb-8">— OTHERS —</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                <BurgerItem img={others1} title="Chicken 65" price="P150" />
-                <BurgerItem img={others2} title="Chicken Burger Combo" price="P200" />
-                <BurgerItem img={others3} title="Chicken Burger" price="P180" />
-                <BurgerItem img={others4} title="Chicken Lollipops" price="P160" />
-                <BurgerItem img={others5} title="Chicken Wings" price="P170" />
-                <BurgerItem img={others6} title="Double Beef Burger Combo" price="P250" />
-                <BurgerItem img={others7} title="Double Beef Burger" price="P230" />
-                <BurgerItem img={others8} title="French Fries" price="P100" />
-                <BurgerItem img={others9} title="Chef Special" price="P200" />
-                <BurgerItem img={others10} title="Onion Pakoda" price="P90" />
-                <BurgerItem img={others11} title="CHEF SPECIAL SPICY BEEF BURGER COMBO" price="P90" />
-                <BurgerItem img={others12} title="CHEF SPECIAL SPICY BEEF BURGER" price="P90" />
-                <BurgerItem img={others13} title="CHEF SPECIAL SPICY CHICKEN BURGER COMBO" price="P90" />
-                <BurgerItem img={others14} title="CHEF SPECIAL SPICY CHICKEN BURGER" price="P90" />
-                <BurgerItem img={others15} title="CHEF SPECIAL SPICY VEG BURGER COMBO" price="P90" />
-                <BurgerItem img={others16} title="CHEF SPECIAL SPICY VEG BURGER" price="P90" />
+                <BurgerItem img={others1} title="Chicken 65" price="P150" onAddToCart={onAddToCart} />
+                <BurgerItem img={others2} title="Chicken Burger Combo" price="P200" onAddToCart={onAddToCart} />
+                <BurgerItem img={others3} title="Chicken Burger" price="P180" onAddToCart={onAddToCart} />
+                <BurgerItem img={others4} title="Chicken Lollipops" price="P160" onAddToCart={onAddToCart} />
+                <BurgerItem img={others5} title="Chicken Wings" price="P170" onAddToCart={onAddToCart} />
+                <BurgerItem img={others6} title="Double Beef Burger Combo" price="P250" onAddToCart={onAddToCart} />
+                <BurgerItem img={others7} title="Double Beef Burger" price="P230" onAddToCart={onAddToCart} />
+                <BurgerItem img={others8} title="French Fries" price="P100" onAddToCart={onAddToCart} />
+                <BurgerItem img={others9} title="Chef Special" price="P200" onAddToCart={onAddToCart} />
+                <BurgerItem img={others10} title="Onion Pakoda" price="P90" onAddToCart={onAddToCart} />
+                <BurgerItem img={others11} title="CHEF SPECIAL SPICY BEEF BURGER COMBO" price="P90" onAddToCart={onAddToCart} />
+                <BurgerItem img={others12} title="CHEF SPECIAL SPICY BEEF BURGER" price="P90" onAddToCart={onAddToCart} />
+                <BurgerItem img={others13} title="CHEF SPECIAL SPICY CHICKEN BURGER COMBO" price="P90" onAddToCart={onAddToCart} />
+                <BurgerItem img={others14} title="CHEF SPECIAL SPICY CHICKEN BURGER" price="P90" onAddToCart={onAddToCart} />
+                <BurgerItem img={others15} title="CHEF SPECIAL SPICY VEG BURGER COMBO" price="P90" onAddToCart={onAddToCart} />
+                <BurgerItem img={others16} title="CHEF SPECIAL SPICY VEG BURGER" price="P90" onAddToCart={onAddToCart} />
             </div>
 
             {/* Bottom Text */}
@@ -131,11 +131,52 @@ const Menu = () => {
     );
 };
 
-const BurgerItem = ({ img, title, price }) => (
-    <div className="flex flex-col items-center text-center">
-        <img src={img} alt={title} className="w-[400px] h-[400px] object-cover rounded-lg shadow-md mb-4" />
-        <p className="text-xl">{title} <br /> <span className="text-lg font-light">{price}</span></p>
-    </div>
-);
+const BurgerItem = ({ img, title, price, onAddToCart }) => {
+    const [quantity, setQuantity] = useState(0);
+
+    const handleIncrement = () => {
+        setQuantity(prevQuantity => prevQuantity + 1);
+    };
+
+    const handleDecrement = () => {
+        setQuantity(prevQuantity => (prevQuantity > 0 ? prevQuantity - 1 : 0));
+    };
+
+    const handleAddToCart = () => {
+        if (quantity > 0) {
+            onAddToCart({ title, price, quantity });
+            setQuantity(0); // Reset quantity after adding to cart
+        }
+    };
+
+    return (
+        <div className="flex flex-col items-center text-center bg-gray-800 rounded-lg p-4">
+            <img src={img} alt={title} className="w-full h-48 object-cover rounded-md shadow-md mb-4" />
+            <p className="text-xl font-semibold">{title}</p>
+            <p className="text-lg font-light mb-4">{price}</p>
+            <div className="flex items-center mb-4">
+                <button 
+                    onClick={handleDecrement} 
+                    className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-l"
+                >
+                    -
+                </button>
+                <span className="px-4 py-1 bg-gray-700 text-white">{quantity}</span>
+                <button 
+                    onClick={handleIncrement} 
+                    className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-r"
+                >
+                    +
+                </button>
+            </div>
+            <button 
+                onClick={handleAddToCart}
+                className="bg-secondary hover:bg-orange-600 text-primary font-bold px-6 py-2 rounded"
+            >
+                Add to Cart
+            </button>
+        </div>
+    );
+};
 
 export default Menu;
