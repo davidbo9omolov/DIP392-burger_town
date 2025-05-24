@@ -96,7 +96,7 @@ npm test
 
 ## 📼 Video Demonstration
 
-🎥 Click here to watch the demo video (If available)
+🎥 [Click here to watch the demo video](https://drive.google.com/file/d/17lR0fazzoJjugAudX_QU12lSMisyMttd/view?usp=sharing)
 
 ---
 
