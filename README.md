@@ -78,6 +78,11 @@ npm test
 - Ensure MongoDB is running if using a local instance
 - Clear npm cache if you encounter dependency issues: `npm cache clean --force`
 
+### 6. Video demo
+
+🎥 [Click here to watch the setup demo video](https://drive.google.com/file/d/1hbDIWfoiV7PxSc41VxaMQGHPPZkY7Phk/view?usp=sharing)
+
+* You can you either set up instruction or video demo 😊💻⚙️
 ---
 
 ## 👥 Team Members and Roles
@@ -96,7 +101,7 @@ npm test
 
 ## 📼 Video Demonstration
 
-🎥 [Click here to watch the demo video](https://drive.google.com/file/d/17lR0fazzoJjugAudX_QU12lSMisyMttd/view?usp=sharing)
+🎥 [Click here to watch the software demo video](https://drive.google.com/file/d/17lR0fazzoJjugAudX_QU12lSMisyMttd/view?usp=sharing)
 
 Download the video demonstration for software Burger town , then watch it 😊
 
