@@ -1,6 +1,6 @@
 # 🍔 Team 7 DIP392 - Burger Town
 
-Welcome to the official GitHub repository for Burger Town — a modern digital restaurant ordering platform developed by Team 7 for the DIP392 final project.
+Welcome to the official GitHub repository for the project Burger Town — a modern digital restaurant ordering platform developed by Team 7 for the DIP392 final project.
 
 ---
 
@@ -94,6 +94,12 @@ npm test
 * Instructor : Prof. Aleksejs Jurenoks 👑 
 ---
 
+## 📼 Video Demonstration
+
+🎥 Click here to watch the demo video (If available)
+
+---
+
 ## 🌐 Live Deployment
 
 The application is deployed and accessible online. You can visit the live website at:
@@ -101,12 +107,6 @@ The application is deployed and accessible online. You can visit the live websit
 [Burger Town Live Website](https://dip-392-burger-town.vercel.app/)
 
 Feel free to explore the application without setting up the development environment!
-
----
-
-## 📼 Video Demonstration
-
-🎥 Click here to watch the demo video (If available)
 
 ---
 
