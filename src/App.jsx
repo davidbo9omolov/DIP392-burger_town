@@ -20,6 +20,8 @@ const App = () => {
 
     const [cart, setCart] = useState([]);
     const [notification, setNotification] = useState(null);
+    const [orders, setOrders] = useState([]);
+    const [lastOrder, setLastOrder] = useState(null);
 
     const addToCart = (itemToAdd) => {
         setCart(prevCart => {
@@ -56,6 +58,30 @@ const App = () => {
         });
     };
 
+    const addOrder = (orderItems) => {
+        // Create a new order object with a unique ID and the current cart items
+        const newOrder = { id: orders.length + 1, items: orderItems, status: 'Pending', preparationTime: null };
+        setOrders(prevOrders => {
+            const updatedOrders = [...prevOrders, newOrder];
+            console.log('Orders after adding:', updatedOrders);
+            return updatedOrders;
+        });
+        setLastOrder(newOrder); // Set the last placed order
+        return newOrder; // Return the newly created order
+    };
+
+    const updateOrderStatus = (orderId, status, preparationTime = null) => {
+        setOrders(prevOrders =>
+            prevOrders.map(order =>
+                order.id === orderId ? { ...order, status, preparationTime } : order
+            )
+        );
+         // If the updated order is the last order, update lastOrder state as well
+        setLastOrder(prevLastOrder =>
+            prevLastOrder && prevLastOrder.id === orderId ? { ...prevLastOrder, status, preparationTime } : prevLastOrder
+        );
+    };
+
     // Effect to clear notification after a few seconds
     useEffect(() => {
         if (notification) {
@@ -66,6 +92,11 @@ const App = () => {
         }
     }, [notification]);
 
+     // Add useEffect to log orders state in App.jsx
+    useEffect(() => {
+        console.log('App.jsx orders state updated:', orders);
+    }, [orders]);
+
     return (
         <div className={'min-h-screen w-auto flex flex-col overflow-hidden relative'}>
             {showHeaderAndFooter && <Header cart={cart} />}
@@ -74,17 +105,17 @@ const App = () => {
                     {/* Set Login page as the initial route */}
                     <Route path={WebRoutes.LOGIN} element={<LoginPage/>}/>
                     
-                    {/* Admin dashboard route */}
-                    <Route path={WebRoutes.ADMIN_DASHBOARD} element={<AdminDashboard/>}/>
+                    {/* Admin dashboard route - pass orders and updateOrderStatus */}
+                    <Route path={WebRoutes.ADMIN_DASHBOARD} element={<AdminDashboard orders={orders} updateOrderStatus={updateOrderStatus} />}/>
 
-                    {/* Route for the new Sent To Kitchen page */}
-                    <Route path={WebRoutes.CART_DETAILS} element={<SentToKitchenPage cart={cart} setCart={setCart} />}/>
+                    {/* Route for the new Sent To Kitchen page - pass addOrder and cart */}
+                    <Route path={WebRoutes.CART_DETAILS} element={<SentToKitchenPage cart={cart} setCart={setCart} addOrder={addOrder} />}/>
 
                     {/* Cart Page route (previous) - still keep if needed for other links */}
                     <Route path={WebRoutes.ORDER} element={<CartPage cart={cart} addToCart={addToCart} setCart={setCart} />}/>
 
-                    {/* New Order Status route */}
-                    <Route path={WebRoutes.ORDER_STATUS} element={<OrderStatusPage/>}/>
+                    {/* New Order Status route - pass lastOrder */}
+                    <Route path={WebRoutes.ORDER_STATUS} element={<OrderStatusPage lastOrder={lastOrder} />}/>
                     
                     {/* Standard routes that show header/footer (accessible after guest login) */}
                     <Route path={WebRoutes.HOME} element={<Home/>}/>

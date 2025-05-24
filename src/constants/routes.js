@@ -6,5 +6,6 @@ export const WebRoutes = {
     LOGIN: '/login',
     ADMIN_DASHBOARD: '/admin-dashboard',
     ORDER: '/order',
-    CART_DETAILS: '/cart-details'
+    CART_DETAILS: '/cart-details',
+    ORDER_STATUS: '/order-status'
 }
